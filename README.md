@@ -15,8 +15,6 @@
     <li><strong>Automatic Google Meet Joining</strong>: The bot can join a Google Meet session as a guest.</li>
     <li><strong>Mute Microphone and Camera</strong>: Ensures the bot does not transmit audio or video during the session.</li>
     <li><strong>Audio Recording</strong>: Records audio from the meeting using <code>pyaudio</code>.</li>
-    <li><strong>Auto-Exit</strong>: The bot will automatically leave the meeting when the host exits or if the bot is the only participant left.</li>
-    <li><strong>Noise Reduction</strong>: Basic noise reduction is applied to the recorded audio.</li>
 </ul>
 
 <h2>Folder Structure</h2>
@@ -45,7 +43,6 @@ pip install -r requirements.txt
     <li><code>undetected-chromedriver</code></li>
     <li><code>selenium</code></li>
     <li><code>pyaudio</code></li>
-    <li><code>noisereduce</code></li>
 </ul>
 
 <h2>Usage</h2>
@@ -59,11 +56,6 @@ python3 meet_bot/meet.py
 </pre>
 <p>This will start the bot, which will automatically join the Google Meet, mute audio and video, and start recording the session. The audio is saved as a WAV file after the session ends.</p>
 
-<h2>Auto-Exit Behavior</h2>
-<p>The bot is designed to automatically exit the meeting when the host leaves or if the bot detects that it's the only participant left in the meeting.</p>
-
-<h2>Recording and Noise Reduction</h2>
-<p>The bot captures system audio, and basic noise reduction is applied to the recording using the <code>noisereduce</code> library. The audio is saved in WAV format and can be processed further if needed.</p>
 
 <h2>License</h2>
 <p>This project is licensed under the MIT License. Feel free to modify and distribute as per the terms of the license.</p>
