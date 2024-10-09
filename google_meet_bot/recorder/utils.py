@@ -1,5 +1,6 @@
 # recorder/utils.py
 
+
 def print_welcome_message() -> None:
     """
     Prints a welcome message for the user.
