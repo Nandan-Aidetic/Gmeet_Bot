@@ -205,7 +205,7 @@ def join_google_meet(config: MeetJoinerConfig) -> None:
     Args:
         config (MeetJoinerConfig): Configuration for the meeting.
     """
-    media_stream_driver = VirtualMediaStreamer(config.video_url)
+    media_stream_driver = VirtualMediaStreamer(config.video_url, config.audio_url)
     media_stream_driver.unload_modules()
     media_stream_driver.load_virtual_audio_modules()
     chrome_options = Options()
