@@ -5,7 +5,7 @@ import wave
 from pydantic import BaseModel
 import threading
 
-from recorder.models import AudioRecorderConfig
+from bot.models import AudioRecorderConfig
 
 
 class AudioRecorder:

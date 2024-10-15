@@ -2,6 +2,7 @@ from pydantic import BaseModel
 
 class MeetJoinerConfig(BaseModel):
     meeting_url: str
+    video_url: str
 
 
 class AudioRecorderConfig(BaseModel):
