@@ -271,8 +271,6 @@ def join_google_meet(config: MeetJoinerConfig) -> None:
                 click_mic(driver)
                 media_stream_driver.play_audio()
 
-                recorder.stop_recording()
-
                 def stream_video_async():
                     media_stream_driver.run()
 
